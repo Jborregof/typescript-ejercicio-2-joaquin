@@ -4,6 +4,7 @@
 // En el constructor de "Developer", debéis añadir los parámetros al constructor de la clase padre (super) y setear la propiedad "bestLanguage" sabiendo que es de tipo saySomethingión que recibe una cadena.
 // Cuando acabéis, debéis descomentar las siguientes líneas de código y colocarlas despúes de todo lo que añadáis:
 
+//Creamos la clase persona con lo que nos pide el enunciado
 class Person {
   private name: string;
   private age: number;
@@ -20,6 +21,7 @@ class Person {
   }
 }
 
+//Creamos la clase developer con lo que nos pide el enunciado
 class Developer extends Person {
   public bestLanguage: (arg0: string) => void;
 
