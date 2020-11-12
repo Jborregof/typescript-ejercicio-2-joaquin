@@ -7,9 +7,9 @@
 class Person {
   private name: string;
   private age: number;
-  public saySomething: (string) => void;
+  public saySomething: (arg0: string) => void;
 
-  constructor(name: string, age: number, saySomething: (string) => void) {
+  constructor(name: string, age: number, saySomething: (arg0: string) => void) {
     this.name = name;
     this.age = age;
     this.saySomething = saySomething;
@@ -21,13 +21,13 @@ class Person {
 }
 
 class Developer extends Person {
-  public bestLanguage: (string) => void;
+  public bestLanguage: (arg0: string) => void;
 
   constructor(
     name: string,
     age: number,
-    saySomething: (string) => void,
-    bestLanguage: (string) => void
+    saySomething: (arg0: string) => void,
+    bestLanguage: (arg0: string) => void
   ) {
     super(name, age, saySomething);
     this.bestLanguage = bestLanguage;
